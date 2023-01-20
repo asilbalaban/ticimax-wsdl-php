@@ -1,0 +1,154 @@
+<?php
+/**
+ * File for class TicimaxStructUlke
+ * @package Ticimax
+ * @subpackage Structs
+ * @author WsdlToPhp Team <contact@wsdltophp.com>
+ * @version 20150429-01
+ * @date 2019-07-25
+ */
+/**
+ * This class stands for TicimaxStructUlke originally named Ulke
+ * Meta informations extracted from the WSDL
+ * - from schema : {@link https://lorisparfum.com/Servis/UrunServis.svc?xsd=xsd2}
+ * @package Ticimax
+ * @subpackage Structs
+ * @author WsdlToPhp Team <contact@wsdltophp.com>
+ * @version 20150429-01
+ * @date 2019-07-25
+ */
+class TicimaxStructUlke extends TicimaxWsdlClass
+{
+    /**
+     * The Alpha2Code
+     * Meta informations extracted from the WSDL
+     * - minOccurs : 0
+     * - nillable : true
+     * @var string
+     */
+    public $Alpha2Code;
+    /**
+     * The Alpha3Code
+     * Meta informations extracted from the WSDL
+     * - minOccurs : 0
+     * - nillable : true
+     * @var string
+     */
+    public $Alpha3Code;
+    /**
+     * The ID
+     * Meta informations extracted from the WSDL
+     * - minOccurs : 0
+     * @var int
+     */
+    public $ID;
+    /**
+     * The Tanim
+     * Meta informations extracted from the WSDL
+     * - minOccurs : 0
+     * - nillable : true
+     * @var string
+     */
+    public $Tanim;
+    /**
+     * Constructor method for Ulke
+     * @see parent::__construct()
+     * @param string $_alpha2Code
+     * @param string $_alpha3Code
+     * @param int $_iD
+     * @param string $_tanim
+     * @return TicimaxStructUlke
+     */
+    public function __construct($_alpha2Code = NULL,$_alpha3Code = NULL,$_iD = NULL,$_tanim = NULL)
+    {
+        parent::__construct(array('Alpha2Code'=>$_alpha2Code,'Alpha3Code'=>$_alpha3Code,'ID'=>$_iD,'Tanim'=>$_tanim),false);
+    }
+    /**
+     * Get Alpha2Code value
+     * @return string|null
+     */
+    public function getAlpha2Code()
+    {
+        return $this->Alpha2Code;
+    }
+    /**
+     * Set Alpha2Code value
+     * @param string $_alpha2Code the Alpha2Code
+     * @return string
+     */
+    public function setAlpha2Code($_alpha2Code)
+    {
+        return ($this->Alpha2Code = $_alpha2Code);
+    }
+    /**
+     * Get Alpha3Code value
+     * @return string|null
+     */
+    public function getAlpha3Code()
+    {
+        return $this->Alpha3Code;
+    }
+    /**
+     * Set Alpha3Code value
+     * @param string $_alpha3Code the Alpha3Code
+     * @return string
+     */
+    public function setAlpha3Code($_alpha3Code)
+    {
+        return ($this->Alpha3Code = $_alpha3Code);
+    }
+    /**
+     * Get ID value
+     * @return int|null
+     */
+    public function getID()
+    {
+        return $this->ID;
+    }
+    /**
+     * Set ID value
+     * @param int $_iD the ID
+     * @return int
+     */
+    public function setID($_iD)
+    {
+        return ($this->ID = $_iD);
+    }
+    /**
+     * Get Tanim value
+     * @return string|null
+     */
+    public function getTanim()
+    {
+        return $this->Tanim;
+    }
+    /**
+     * Set Tanim value
+     * @param string $_tanim the Tanim
+     * @return string
+     */
+    public function setTanim($_tanim)
+    {
+        return ($this->Tanim = $_tanim);
+    }
+    /**
+     * Method called when an object has been exported with var_export() functions
+     * It allows to return an object instantiated with the values
+     * @see TicimaxWsdlClass::__set_state()
+     * @uses TicimaxWsdlClass::__set_state()
+     * @param array $_array the exported values
+     * @return TicimaxStructUlke
+     */
+    public static function __set_state(array $_array,$_className = __CLASS__)
+    {
+        return parent::__set_state($_array,$_className);
+    }
+    /**
+     * Method returning the class name
+     * @return string __CLASS__
+     */
+    public function __toString()
+    {
+        return __CLASS__;
+    }
+}
